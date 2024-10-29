@@ -1,0 +1,256 @@
+﻿@using Platform_DomainModelEntity.Models;
+@using Platform_Infrastruture.Api;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+@{
+	ViewData["Title"] = "Common_Problems";
+	Layout = null;
+}
+
+@{
+	string userValue = @HttpContextAccessor.HttpContext.Session.GetString("user");
+	var db = new User();
+	db = null;
+	if (userValue != "" && userValue != null)
+	{
+		UserApi userapi = new UserApi();
+		var data = userapi.GetAllUser().Result;
+		db = data.Where(x => x.Id == Convert.ToInt32(userValue)).FirstOrDefault();
+	}
+
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Common Problems</title>
+	<link rel="stylesheet" href="~/css/Home/Common_ProblemsStyle.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+	<div id="warning">
+		<img src="~/Img/warning/warning.png" />
+	</div>
+
+	<div id="content_id">
+		<div class="video-app">
+
+			<div class="header">
+				<div class="header-left">
+					<a href="~/Home/HomePage">
+						<img src="~/Img/LogoWhite.png" class="logo" />
+					</a>
+				</div>
+				<div class="header-menu">
+					<a href="~/Home/HomePage" class="menu-item ">Home</a>
+					<a href="~/Home/Daily_SignIn" class="menu-item ">Check-In</a>
+					<a href="~/Home/Rules" class="menu-item notify">Beginner's Basics</a>
+					<a href="~/Home/Customer_Services" class="menu-item ">Service</a>
+					<a href="~/Home/Common_Problems" class="menu-item active">FAQs</a>
+				</div>
+				<div class="user-settings">
+					@if (db != null)
+					{
+						<div class="login-register-box">
+							<a href="~/Login/Logout">Log out</a>
+						</div>
+
+						<a href="~/User/Index">
+							<img class="user-profile "
+								 src="~/Img/Avatar/@db.avatar"
+								 alt="">
+						</a>
+					}
+					else
+					{
+						<div class="login-register-box">
+							<a href="~/Login/Login">Login</a>
+							<a href="~/Login/Register">Register</a>
+						</div>
+
+						<a href="~/Login/Login">
+							<svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 50 50">
+								<g>
+									<path class="st0"
+										  d="M25,27c2.5,0,4.5-2,4.5-4.5S27.5,18,25,18s-4.5,2-4.5,4.5S22.5,27,25,27z">
+									</path>
+									<path class="st0"
+										  d="M35.5,20.6C34.9,19.2,34.1,18,33,17c-1-1-2.3-1.9-3.6-2.4c-1.4-0.6-2.9-0.9-4.4-0.9c-1.6,0-3.2,0.3-4.7,1c-1.4,0.6-2.7,1.6-3.7,2.7c-0.2,0.2-0.2,0.5,0,0.7c0.2,0.2,0.5,0.2,0.7,0c2-2.2,4.7-3.4,7.6-3.4c5.7,0,10.3,4.6,10.3,10.3c0,0.8-0.1,1.7-0.3,2.5c-0.1,0.3,0.1,0.6,0.4,0.6c0,0,0.1,0,0.1,0c0.2,0,0.5-0.2,0.5-0.4c0.2-0.9,0.3-1.8,0.3-2.7C36.4,23.5,36.1,22,35.5,20.6z">
+									</path>
+									<path class="st0"
+										  d="M31.7,32.9c-0.2,0.1-0.3,0.3-0.5,0.4l-0.8-3.9c-0.1-0.5-0.6-1-1.2-1h-8.5c-0.5,0-1.1,0.4-1.2,1l-0.8,3.9c-2.5-1.9-4.1-4.9-4.1-8.2c0-1.1,0.2-2.2,0.5-3.2c0.1-0.3-0.1-0.6-0.3-0.7c-0.3-0.1-0.6,0.1-0.7,0.3c-0.4,1.1-0.6,2.3-0.6,3.6c0,1.5,0.3,3,0.9,4.4c0.6,1.4,1.4,2.6,2.4,3.6c1,1,2.3,1.9,3.6,2.4c1.4,0.6,2.9,0.9,4.4,0.9c1.4,0,2.7-0.2,4-0.7c1.2-0.5,2.4-1.1,3.4-2c0.2-0.2,0.2-0.5,0.1-0.7C32.2,32.7,31.9,32.7,31.7,32.9z">
+									</path>
+								</g>
+							</svg>
+						</a>
+					}
+
+				</div>
+			</div>
+
+			<div class="JG">
+				<div class="swiper mySwiper-vertical">
+					<div class="swiper-wrapper vertical-JG">
+						<div class="swiper-slide">[Station Announcement] The general moderation rules are here! Please read carefully to avoid violating <a href="#" class="text-alert">Beginner's Basics</a> (2023-10-14)</div>
+						<div class="swiper-slide">[Station Announcement] Please follow forum rules, post relevant content in the appropriate sections, or else we'll revoke your posting privileges. (2023-10-14)</div>
+						<div class="swiper-slide">[Station Announcement] No online violence allowed, please use friendly comments and communication. (2023-10-14)</div>
+						<div class="swiper-slide">[Station Announcement] No explicit content posts allowed, or else your account will be blocked. (2023-10-14)</div>
+						<div class="swiper-slide">[Station Announcement] Please refrain from posting false information that could mislead others. (2023-10-14)</div>
+						<div class="swiper-slide">
+							[Station Announcement] If you have any questions about the forum, you can click on <a href='#' class='text-alert'>Customer Support</a> to get help. (2023-10-14)
+						</div>
+						<div class="swiper-slide">[Station Announcement] Avoid sharing your account and password with others, or face the consequences yourself. (2023-10-14)</div>
+						<div class="swiper-slide">[Station Announcement] Exercise caution in trusting others and avoid falling for scams. (2023-10-14)</div>
+						<div class="swiper-slide">[Station Announcement] Please be cautious about any content related to transferring money to others to avoid falling for scams. (2023-10-14)</div>
+						<div class="swiper-slide">[Station Announcement] Please protect the privacy of others. (2023-10-14)</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+		<section class="top-container">
+			<div class="showtitle">
+				<div class="left-title">
+					<p>Views: 3847 | Replies: 3</p>
+				</div>
+				<div class="right-title">
+					<p>[FAQ] FAQ for this forum</p>
+				</div>
+			</div>
+			<div class="hr-title"></div>
+
+			<div class="showtitle-name">
+				<div class="username">
+					<p>Admin</p>
+					<div class="dais"></div>
+				</div>
+				<div class="time-name">
+					<p>Published at 02:36 PM the day before yesterday | View only this author | Browse in reverse order</p>
+					<div class="dais"></div>
+				</div>
+			</div>
+
+
+			<div>
+			</div>
+
+			<div class="showcase">
+				<div class="left-container">
+					<div class="avatar">
+						<img src="~/Img/Avatar/Avatar.png" />
+					</div>
+					<div class="level">
+						<p class="name-position">Admin</p>
+						<p class="exple"><span class="me">1</span> / <span class="all">1</span></p>
+					</div>
+					<div class="Tzi">
+						<div>
+							<p>Post</p>
+							<p>Friends</p>
+						</div>
+						<div>
+							<p>0</p>
+							<p>0</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="right-container">
+
+					<div class="container">
+						<div class="accordion">
+							<div class="accordion-item">
+								<button id="accordion-button-1" aria-expanded="false">
+									<span class="accordion-title">Account problem</span><span class="icon" aria-hidden="true"></span>
+								</button>
+								<div class="accordion-content">
+									<p>If you encounter account issues, please contact us. Common problems include account theft, forgotten account details, login difficulties, and account breaches. For stolen accounts, while it's often challenging to recover, you can inform us, and we'll assist in suspending the account. If you've forgotten your account information, contact our customer service for retrieval. If you're unable to log in, please make sure to remember your account and password, or get in touch with our customer service for further assistance. In case of an account breach, let us know the details, and we will help you resolve the issue.</p>
+
+								</div>
+							</div>
+							<div class="accordion-item">
+								<button id="accordion-button-2" aria-expanded="false">
+									<span class="accordion-title">Operational issues</span><span class="icon" aria-hidden="true"></span>
+								</button>
+								<div class="accordion-content">
+									<p>
+										Beginners can view posts from Admin in any section, where instructions on posting are provided. If you have any questions or need clarification, feel free to ask our customer service.
+									</p>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<button id="accordion-button-3" aria-expanded="false">
+									<span class="accordion-title">Forgot Password</span><span class="icon" aria-hidden="true"></span>
+								</button>
+								<div class="accordion-content">
+									<p>
+										If you forget your password, you can go to the login page and click "Forgot Password" next to the password field. Then, you can reset your new password.
+									</p>
+								</div>
+							</div>
+
+							<div class="accordion-item">
+								<button id="accordion-button-3" aria-expanded="false">
+									<span class="accordion-title">Encountering Bugs</span><span class="icon" aria-hidden="true"></span>
+								</button>
+								<div class="accordion-content">
+									<p>
+										If you encounter any bugs, please inform our customer service, and we will do our best to fix them!
+									</p>
+								</div>
+							</div>
+
+							<div class="accordion-item">
+								<button id="accordion-button-3" aria-expanded="false">
+									<span class="accordion-title">Unable to Register</span><span class="icon" aria-hidden="true"></span>
+								</button>
+								<div class="accordion-content">
+									<p>
+										Please do not use an email or username that has already been registered, as it is not allowed. If you are still unable to register, please contact our customer service.
+									</p>
+								</div>
+							</div>
+
+							<div class="accordion-item">
+								<button id="accordion-button-3" aria-expanded="false">
+									<span class="accordion-title">Other Issues</span><span class="icon" aria-hidden="true"></span>
+								</button>
+								<div class="accordion-content">
+									<p>
+										If you have any other issues, please contact our customer service.
+									</p>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+
+
+
+		</section>
+
+	</div>
+	<span id="scrolltop" onclick="window.scrollTo('0','0')">
+		<img src="../img/backtopIcon.png" />
+	</span>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<script src="~/js/Home/HomeJs.js"></script>
+	<script src="~/js/Public/Size.js"></script>
+</body>
+
+</html>
+

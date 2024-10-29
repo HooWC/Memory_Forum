@@ -1,0 +1,14 @@
+D:\桌面\Platform\API\Api_Platform\DomainModelEntity\bin\Debug\net6.0\DomainModelEntity.deps.json
+D:\桌面\Platform\API\Api_Platform\DomainModelEntity\bin\Debug\net6.0\DomainModelEntity.runtimeconfig.json
+D:\桌面\Platform\API\Api_Platform\DomainModelEntity\bin\Debug\net6.0\DomainModelEntity.dll
+D:\桌面\Platform\API\Api_Platform\DomainModelEntity\bin\Debug\net6.0\DomainModelEntity.pdb
+D:\桌面\Platform\API\Api_Platform\DomainModelEntity\obj\Debug\net6.0\DomainModelEntity.csproj.AssemblyReference.cache
+D:\桌面\Platform\API\Api_Platform\DomainModelEntity\obj\Debug\net6.0\DomainModelEntity.GeneratedMSBuildEditorConfig.editorconfig
+D:\桌面\Platform\API\Api_Platform\DomainModelEntity\obj\Debug\net6.0\DomainModelEntity.AssemblyInfoInputs.cache
+D:\桌面\Platform\API\Api_Platform\DomainModelEntity\obj\Debug\net6.0\DomainModelEntity.AssemblyInfo.cs
+D:\桌面\Platform\API\Api_Platform\DomainModelEntity\obj\Debug\net6.0\DomainModelEntity.csproj.CoreCompileInputs.cache
+D:\桌面\Platform\API\Api_Platform\DomainModelEntity\obj\Debug\net6.0\DomainModelEntity.dll
+D:\桌面\Platform\API\Api_Platform\DomainModelEntity\obj\Debug\net6.0\refint\DomainModelEntity.dll
+D:\桌面\Platform\API\Api_Platform\DomainModelEntity\obj\Debug\net6.0\DomainModelEntity.pdb
+D:\桌面\Platform\API\Api_Platform\DomainModelEntity\obj\Debug\net6.0\DomainModelEntity.genruntimeconfig.cache
+D:\桌面\Platform\API\Api_Platform\DomainModelEntity\obj\Debug\net6.0\ref\DomainModelEntity.dll

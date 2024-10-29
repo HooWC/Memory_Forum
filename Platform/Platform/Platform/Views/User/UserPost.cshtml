@@ -1,0 +1,283 @@
+﻿@using Platform_DomainModelEntity.Models;
+@using Platform_Infrastruture.Api;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+@{
+	ViewData["Title"] = "UserPost";
+	Layout = null;
+}
+
+@{
+	string userValue = @HttpContextAccessor.HttpContext.Session.GetString("user");
+	var db = new User();
+	db = null;
+	if (userValue != "" && userValue != null)
+	{
+		UserApi userapi = new UserApi();
+		var data = userapi.GetAllUser().Result;
+		db = data.Where(x => x.Id == Convert.ToInt32(userValue)).FirstOrDefault();
+	}
+
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Post History</title>
+	<link rel="stylesheet" href="~/css/User/UserPostStyle.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+	<div id="warning">
+		<img src="~/Img/warning/warning.png" />
+	</div>
+
+	<div id="content_id">
+
+		<div class="video-app">
+
+			<div class="header">
+				<div class="header-left">
+					<a href="~/Home/HomePage">
+						<img src="~/Img/LogoWhite.png" class="logo" />
+					</a>
+				</div>
+				<div class="header-menu">
+					<a href="~/Home/HomePage" class="menu-item">Home</a>
+					<a href="~/Home/Daily_SignIn" class="menu-item">Check-In</a>
+					<a href="~/Home/Rules" class="menu-item notify">Beginner's Basics</a>
+					<a href="~/Home/Customer_Services" class="menu-item">Service</a>
+					<a href="~/Home/Common_Problems" class="menu-item">FAQs</a>
+				</div>
+				<div class="user-settings">
+					@if (db != null)
+					{
+						<div class="login-register-box">
+							<a href="~/Login/Logout">Log out</a>
+						</div>
+
+						<a href="~/User/Index">
+							<img class="user-profile "
+								 src="~/Img/Avatar/@db.avatar"
+								 alt="">
+						</a>
+					}
+					else
+					{
+						<div class="login-register-box">
+							<a href="~/Login/Login">Login</a>
+							<a href="~/Login/Register">Register</a>
+						</div>
+
+						<a href="~/Login/Login">
+							@if (db != null)
+							{
+								<div class="login-register-box">
+									<a href="~/Login/Logout">Log out</a>
+								</div>
+
+								<a href="~/User/Index">
+									<img class="user-profile "
+										 src="~/Img/Avatar/@db.avatar"
+										 alt="">
+								</a>
+							}
+							else
+							{
+								<div class="login-register-box">
+									<a href="~/Login/Login">Login</a>
+									<a href="~/Login/Register">Register</a>
+								</div>
+
+								<a href="~/Login/Login">
+									@*<img class="user-profile "
+							src="~/Img/Avatar/Avatar.png"
+							alt="">*@
+									<svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 50 50">
+										<g>
+											<path class="st0"
+												  d="M25,27c2.5,0,4.5-2,4.5-4.5S27.5,18,25,18s-4.5,2-4.5,4.5S22.5,27,25,27z">
+											</path>
+											<path class="st0"
+												  d="M35.5,20.6C34.9,19.2,34.1,18,33,17c-1-1-2.3-1.9-3.6-2.4c-1.4-0.6-2.9-0.9-4.4-0.9c-1.6,0-3.2,0.3-4.7,1c-1.4,0.6-2.7,1.6-3.7,2.7c-0.2,0.2-0.2,0.5,0,0.7c0.2,0.2,0.5,0.2,0.7,0c2-2.2,4.7-3.4,7.6-3.4c5.7,0,10.3,4.6,10.3,10.3c0,0.8-0.1,1.7-0.3,2.5c-0.1,0.3,0.1,0.6,0.4,0.6c0,0,0.1,0,0.1,0c0.2,0,0.5-0.2,0.5-0.4c0.2-0.9,0.3-1.8,0.3-2.7C36.4,23.5,36.1,22,35.5,20.6z">
+											</path>
+											<path class="st0"
+												  d="M31.7,32.9c-0.2,0.1-0.3,0.3-0.5,0.4l-0.8-3.9c-0.1-0.5-0.6-1-1.2-1h-8.5c-0.5,0-1.1,0.4-1.2,1l-0.8,3.9c-2.5-1.9-4.1-4.9-4.1-8.2c0-1.1,0.2-2.2,0.5-3.2c0.1-0.3-0.1-0.6-0.3-0.7c-0.3-0.1-0.6,0.1-0.7,0.3c-0.4,1.1-0.6,2.3-0.6,3.6c0,1.5,0.3,3,0.9,4.4c0.6,1.4,1.4,2.6,2.4,3.6c1,1,2.3,1.9,3.6,2.4c1.4,0.6,2.9,0.9,4.4,0.9c1.4,0,2.7-0.2,4-0.7c1.2-0.5,2.4-1.1,3.4-2c0.2-0.2,0.2-0.5,0.1-0.7C32.2,32.7,31.9,32.7,31.7,32.9z">
+											</path>
+										</g>
+									</svg>
+								</a>
+							}
+						</a>
+					}
+
+				</div>
+			</div>
+		</div>
+
+		<main>
+			<div class="user-header-wrapper flexbox">
+				<div class="user-header-inner flexbox">
+					<div class="user-header-overlay"></div>
+					<img class="user-header" src="~/Img/wrapperUserPage.png" alt="">
+				</div>
+			</div>
+			<form action="~/User/UserEdit" method="post" enctype="multipart/form-data">
+				<div class="user-info-bar">
+					<input value="@db.Id" type="hidden" name="id" />
+					<div class="ufo-bar-col1">
+					</div>
+					<div class="ufo-bar-col2">
+						<div class="ufo-bar-col2-inner">
+							<div class="user-icon-wrapper">
+								<div class="myimg">
+									<input id="myIcon" type="file" name="file" onchange="chooseImg(this)">
+									<img class="user-icon" id="img" src="~/Img/Avatar/@db.avatar" onclick="myIcon.click()">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ufo-bar-col3">
+						<div class="ufo-bar-col3-inner">
+							<div class="username-wrapper-outer">
+								<div class="username-wrapper">
+									<div class="verified" style="opacity: 0; top: 150%;">
+										<p>Verified Account</p>
+									</div>
+									<h3 class="username-dev">@db.username</h3>
+								</div>
+								@*<div>
+								<a class="ufo-bar-fff" href=""><span>857</span> Friends</a>
+								<a class="ufo-bar-fff" href=""><span>137</span> Gold Coins</a>
+								</div>*@
+							</div>
+						</div>
+					</div>
+					<div class="ufo-bar-col4">
+						<div class="ufo-bar-col4-inner">
+							<button id="avatar_update_btn" type="submit" class="button2 btn-primary2">
+								<i class="uil uil-plus"></i> Update Avatar
+								<div class="btn-secondary2">
+								</div>
+							</button>
+						</div>
+					</div>
+			</form>
+			<div class="ufo-bar-col5">
+			</div>
+	</div>
+	<div class="user-info-bar2">
+		<div class="ufo-bar2-col1">
+		</div>
+		<a href="~/User/Index">
+			<div id="ufo-home" class="ufo-bar2-col2 ufo-bar2-block">
+				<div class="ufo-bar2-col2-inner flexbox">
+					<span><i class="uil uil-trophy"></i></span>
+					<h3>Personal</h3>
+				</div>
+			</div>
+		</a>
+		<a href="~/User/BestFriend">
+			<div id="ufo-videos" class="ufo-bar2-col3 ufo-bar2-block ">
+				<div class="ufo-bar2-col3-inner flexbox">
+					<span><i class="uil uil-star"></i></span>
+					<h3>Friend</h3>
+				</div>
+			</div>
+		</a>
+		<a href="~/User/SayHello">
+			<div id="ufo-images" class="ufo-bar2-col4 ufo-bar2-block">
+				<div class="ufo-bar2-col4-inner flexbox">
+					<span><i class="uil uil-comment-alt"></i></span>
+					<h3>Greet</h3>
+				</div>
+			</div>
+		</a>
+		<a href="~/User/UserPost">
+			<div id="ufo-about" class="ufo-bar2-col6 ufo-bar2-block avtive">
+				<div class="ufo-bar2-col6-inner flexbox">
+					<span><i class="uil uil-user"></i></span>
+					<h3>Post</h3>
+				</div>
+			</div>
+		</a>
+		<div class="ufo-bar2-col7">
+		</div>
+	</div>
+	</main>
+
+
+	<section class="top-container">
+		<div class="box-infor">
+			<p class="title">Post List</p>
+
+			<div class="friend-box t1">
+				<table cellspacing="0" cellpadding="0">
+					<tbody class="tbody_t1" id="userpostlist">
+					</tbody>
+				</table>
+			</div>
+
+		</div>
+
+	</section>
+
+
+	<div class="footer">
+		<div class="container-footer">
+			<p>For the sake of account security, it is recommended to use a computer operating system with Windows 7 or above.</p>
+
+			<hr class="hr-footer" />
+			<p class="content-footer-text">
+				<span class="bold-class">Important Statement:</span> This website operates by allowing users to post messages, and the site does not bear any legal responsibility for the authenticity, completeness, or positions of all messages. The opinions expressed in all messages represent the views of the individual users, not the stance of this website. Users should not rely on the content and should judge its authenticity for themselves. As the discussion area operates with a "message" method, it is not possible to fully monitor all messages. If readers find any problematic messages, please contact us. This site reserves the right to delete any messages and refuse messages from any individuals, while also reserving the right not to delete messages. Please refrain from using offensive language, defamation, promoting pornography or violence, or engaging in personal attacks. This website reserves all legal rights.
+			</p>
+			<hr class="hr-footer" />
+			<div class="footer-svg">
+				<a href="https://www.facebook.com/profile.php?id=61553120353451" target="_blank">
+					<svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 30 30">
+						<path d="M12.6,24.7h3.9v-9.8h2.7l0.3-3.3h-3V9.8c0-0.8,0.2-1.1,0.9-1.1h2.1V5.3h-2.7c-2.9,0-4.2,1.3-4.2,3.7v2.6h-2V15h2C12.6,15,12.6,24.7,12.6,24.7z"></path>
+					</svg>
+				</a>
+
+				<a href="https://www.instagram.com/memoryforumweb/" target="_blank">
+					<svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 30 30">
+						<g>
+							<path d="M15,7.8c2.4,0,2.6,0,3.6,0c0.9,0,1.3,0.2,1.6,0.3c0.4,0.2,0.7,0.4,1,0.7c0.3,0.3,0.5,0.6,0.7,1c0.1,0.3,0.3,0.8,0.3,1.6c0,0.9,0.1,1.2,0.1,3.6s0,2.6-0.1,3.6c0,0.9-0.2,1.3-0.3,1.6c-0.2,0.4-0.4,0.7-0.7,1c-0.3,0.3-0.6,0.5-1,0.7c-0.3,0.1-0.8,0.3-1.6,0.3c-0.9,0-1.2,0-3.6,0s-2.6,0-3.6,0c-0.9,0-1.3-0.2-1.6-0.3c-0.4-0.2-0.7-0.4-1-0.7c-0.3-0.3-0.5-0.6-0.7-1c-0.1-0.3-0.3-0.8-0.3-1.6c0-0.9,0-1.2,0-3.6s0-2.6,0-3.6c0-0.9,0.2-1.3,0.3-1.6c0.2-0.4,0.3-0.7,0.7-1c0.3-0.3,0.6-0.5,1-0.7c0.3-0.1,0.8-0.3,1.6-0.3C12.4,7.8,12.6,7.8,15,7.8 M15,6.2c-2.4,0-2.7,0-3.6,0.1c-0.9,0-1.6,0.2-2.1,0.4c-0.6,0.2-1.1,0.5-1.6,1c-0.5,0.5-0.8,1-1,1.6c-0.2,0.6-0.4,1.2-0.4,2.1c0,0.9-0.1,1.2-0.1,3.6c0,2.4,0,2.7,0.1,3.6c0,0.9,0.2,1.6,0.4,2.1c0.2,0.6,0.5,1.1,1,1.6c0.5,0.5,1,0.8,1.6,1c0.6,0.2,1.2,0.4,2.1,0.4c0.9,0,1.2,0.1,3.6,0.1c2.4,0,2.7,0,3.6-0.1c0.9,0,1.6-0.2,2.1-0.4c0.6-0.2,1.1-0.5,1.6-1c0.5-0.5,0.8-1,1-1.6c0.2-0.6,0.4-1.2,0.4-2.1c0-0.9,0.1-1.2,0.1-3.6c0-2.4,0-2.7-0.1-3.6c0-0.9-0.2-1.6-0.4-2.1c-0.2-0.6-0.5-1.1-1-1.6c-0.5-0.5-1-0.8-1.6-1c-0.6-0.2-1.2-0.4-2.1-0.4C17.7,6.2,17.4,6.2,15,6.2"></path>
+							<path d="M15,10.5c-2.5,0-4.5,2-4.5,4.5s2,4.5,4.5,4.5c2.5,0,4.5-2,4.5-4.5S17.5,10.5,15,10.5 M15,17.9c-1.6,0-2.9-1.3-2.9-2.9s1.3-2.9,2.9-2.9s2.9,1.3,2.9,2.9C17.9,16.6,16.6,17.9,15,17.9"></path>
+							<path d="M20.8,10.3c0,0.6-0.5,1.1-1.1,1.1c-0.6,0-1.1-0.5-1.1-1.1c0-0.6,0.5-1.1,1.1-1.1C20.3,9.2,20.8,9.7,20.8,10.3"></path>
+						</g>
+					</svg>
+				</a>
+
+				<a href="https://www.youtube.com/channel/UCYo-7ahkqpUhafDny2mm6AA" target="_blank">
+					<svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 30 30">
+						<path d="M23.4,10.8c-0.2-0.8-0.8-1.4-1.6-1.6C20.5,8.8,15,8.8,15,8.8s-5.5,0-6.9,0.4C7.4,9.4,6.8,10,6.6,10.8C6.2,12.1,6.2,15,6.2,15s0,2.9,0.4,4.2c0.2,0.8,0.8,1.4,1.6,1.6c1.4,0.4,6.9,0.4,6.9,0.4s5.5,0,6.9-0.4c0.8-0.2,1.4-0.8,1.6-1.6c0.4-1.4,0.4-4.2,0.4-4.2S23.8,12.1,23.4,10.8z M13.2,17.6v-5.3l4.6,2.6L13.2,17.6z"></path>
+					</svg>
+				</a>
+			</div>
+			<hr class="hr-footer" style="margin-bottom:10px;" />
+			<p style="font-size:10px;">Copyright © 2023 Memory Forum (https://www.jkforum.net/) All Rights Reserved.</p>
+		</div>
+	</div>
+
+	</div>
+
+	<span id="scrolltop" onclick="window.scrollTo('0','0')">
+		<img src="../img/backtopIcon.png" />
+	</span>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<script src="~/js/User/index.js"></script>
+	<script src="~/js/Public/Size.js"></script>
+	<script src="~/js/User/Post.js"></script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,15 @@
+D:\桌面\Platform\Platform\Platform\Platform_Infrastruture\bin\Debug\net6.0\Platform_Infrastruture.deps.json
+D:\桌面\Platform\Platform\Platform\Platform_Infrastruture\bin\Debug\net6.0\Platform_Infrastruture.dll
+D:\桌面\Platform\Platform\Platform\Platform_Infrastruture\bin\Debug\net6.0\Platform_Infrastruture.pdb
+D:\桌面\Platform\Platform\Platform\Platform_Infrastruture\bin\Debug\net6.0\Platform_DomainModelEntity.dll
+D:\桌面\Platform\Platform\Platform\Platform_Infrastruture\bin\Debug\net6.0\Platform_DomainModelEntity.pdb
+D:\桌面\Platform\Platform\Platform\Platform_Infrastruture\obj\Debug\net6.0\Platform_Infrastruture.csproj.AssemblyReference.cache
+D:\桌面\Platform\Platform\Platform\Platform_Infrastruture\obj\Debug\net6.0\Platform_Infrastruture.GeneratedMSBuildEditorConfig.editorconfig
+D:\桌面\Platform\Platform\Platform\Platform_Infrastruture\obj\Debug\net6.0\Platform_Infrastruture.AssemblyInfoInputs.cache
+D:\桌面\Platform\Platform\Platform\Platform_Infrastruture\obj\Debug\net6.0\Platform_Infrastruture.AssemblyInfo.cs
+D:\桌面\Platform\Platform\Platform\Platform_Infrastruture\obj\Debug\net6.0\Platform_Infrastruture.csproj.CoreCompileInputs.cache
+D:\桌面\Platform\Platform\Platform\Platform_Infrastruture\obj\Debug\net6.0\Platform_Infrastruture.csproj.CopyComplete
+D:\桌面\Platform\Platform\Platform\Platform_Infrastruture\obj\Debug\net6.0\Platform_Infrastruture.dll
+D:\桌面\Platform\Platform\Platform\Platform_Infrastruture\obj\Debug\net6.0\refint\Platform_Infrastruture.dll
+D:\桌面\Platform\Platform\Platform\Platform_Infrastruture\obj\Debug\net6.0\Platform_Infrastruture.pdb
+D:\桌面\Platform\Platform\Platform\Platform_Infrastruture\obj\Debug\net6.0\ref\Platform_Infrastruture.dll

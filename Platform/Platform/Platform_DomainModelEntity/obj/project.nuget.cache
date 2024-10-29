@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "q5VicGaNcKmlba7QxEfW8xciZyb2woTpZBT0l01W092FuRzJC7usrTinyc5q36BQYHKOB9LMVrIrXcDxS+ciSQ==",
+  "success": true,
+  "projectFilePath": "D:\\桌面\\Platform\\Platform\\Platform\\Platform_DomainModelEntity\\Platform_DomainModelEntity.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Hoo\\.nuget\\packages\\bcrypt.net\\0.1.0\\bcrypt.net.0.1.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "已使用“.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1”而不是项目目标框架“net6.0”还原包“BCrypt.Net 0.1.0”。此包可能与项目不完全兼容。",
+      "libraryId": "BCrypt.Net",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}

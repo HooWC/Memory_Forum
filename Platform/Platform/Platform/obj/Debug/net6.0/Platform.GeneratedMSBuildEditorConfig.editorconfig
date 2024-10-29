@@ -1,0 +1,117 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Platform
+build_property.RootNamespace = Platform
+build_property.ProjectDir = D:\桌面\Platform\Platform\Platform\Platform\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\桌面\Platform\Platform\Platform\Platform
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/桌面/Platform/Platform/Platform/Platform/Views/Content/ContentPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudFxDb250ZW50UGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/桌面/Platform/Platform/Platform/Platform/Views/Home/Common_Problems.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb21tb25fUHJvYmxlbXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/桌面/Platform/Platform/Platform/Platform/Views/Home/Customer_Services.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDdXN0b21lcl9TZXJ2aWNlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/桌面/Platform/Platform/Platform/Platform/Views/Home/Daily_SignIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEYWlseV9TaWduSW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/桌面/Platform/Platform/Platform/Platform/Views/Home/HomePage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIb21lUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/桌面/Platform/Platform/Platform/Platform/Views/Home/Rules.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSdWxlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/桌面/Platform/Platform/Platform/Platform/Views/Login/ForgetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cRm9yZ2V0UGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/桌面/Platform/Platform/Platform/Platform/Views/Login/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/桌面/Platform/Platform/Platform/Platform/Views/Login/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/桌面/Platform/Platform/Platform/Platform/Views/OtherProfile/Friend.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3RoZXJQcm9maWxlXEZyaWVuZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/桌面/Platform/Platform/Platform/Platform/Views/OtherProfile/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3RoZXJQcm9maWxlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/桌面/Platform/Platform/Platform/Platform/Views/OtherProfile/Post.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3RoZXJQcm9maWxlXFBvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/桌面/Platform/Platform/Platform/Platform/Views/PostContent/EditPost.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdENvbnRlbnRcRWRpdFBvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/桌面/Platform/Platform/Platform/Platform/Views/PostContent/Normal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdENvbnRlbnRcTm9ybWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/桌面/Platform/Platform/Platform/Platform/Views/Search/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VhcmNoXFNlYXJjaC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/桌面/Platform/Platform/Platform/Platform/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/桌面/Platform/Platform/Platform/Platform/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/桌面/Platform/Platform/Platform/Platform/Views/User/BestFriend.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxCZXN0RnJpZW5kLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/桌面/Platform/Platform/Platform/Platform/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/桌面/Platform/Platform/Platform/Platform/Views/User/SayHello.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxTYXlIZWxsby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/桌面/Platform/Platform/Platform/Platform/Views/User/UserPost.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2VyUG9zdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/桌面/Platform/Platform/Platform/Platform/Views/ZonePage/Zone.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWm9uZVBhZ2VcWm9uZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/桌面/Platform/Platform/Platform/Platform/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/桌面/Platform/Platform/Platform/Platform/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/桌面/Platform/Platform/Platform/Platform/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-182x3amlgu

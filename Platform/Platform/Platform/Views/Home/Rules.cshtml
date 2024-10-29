@@ -1,0 +1,253 @@
+﻿@using Platform_DomainModelEntity.Models;
+@using Platform_Infrastruture.Api;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+@{
+	ViewData["Title"] = "Rules";
+	Layout = null;
+}
+
+@{
+	string userValue = @HttpContextAccessor.HttpContext.Session.GetString("user");
+	var db = new User();
+	db = null;
+	if (userValue != "" && userValue != null)
+	{
+		UserApi userapi = new UserApi();
+		var data = userapi.GetAllUser().Result;
+		db = data.Where(x => x.Id == Convert.ToInt32(userValue)).FirstOrDefault();
+	}
+
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rules</title>
+	<link rel="stylesheet" href="~/css/Home/RulesStyle.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+	<div id="warning">
+		<img src="~/Img/warning/warning.png" />
+	</div>
+
+	<div id="content_id">
+		<div class="video-app">
+
+			<div class="header">
+				<div class="header-left">
+					<a href="~/Home/HomePage">
+						<img src="~/Img/LogoWhite.png" class="logo" />
+					</a>
+				</div>
+				<div class="header-menu">
+					<a href="~/Home/HomePage" class="menu-item ">Home</a>
+					<a href="~/Home/Daily_SignIn" class="menu-item ">Check-In</a>
+					<a href="~/Home/Rules" class="menu-item notify active">Beginner's Basics</a>
+					<a href="~/Home/Customer_Services" class="menu-item ">Service</a>
+					<a href="~/Home/Common_Problems" class="menu-item ">FAQs</a>
+				</div>
+				<div class="user-settings">
+					@if (db != null)
+					{
+						<div class="login-register-box">
+							<a href="~/Login/Logout">Log out</a>
+						</div>
+
+						<a href="~/User/Index">
+							<img class="user-profile "
+								 src="~/Img/Avatar/@db.avatar"
+								 alt="">
+						</a>
+					}
+					else
+					{
+						<div class="login-register-box">
+							<a href="~/Login/Login">Login</a>
+							<a href="~/Login/Register">Register</a>
+						</div>
+
+						<a href="~/Login/Login">
+							<svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 50 50">
+								<g>
+									<path class="st0"
+										  d="M25,27c2.5,0,4.5-2,4.5-4.5S27.5,18,25,18s-4.5,2-4.5,4.5S22.5,27,25,27z">
+									</path>
+									<path class="st0"
+										  d="M35.5,20.6C34.9,19.2,34.1,18,33,17c-1-1-2.3-1.9-3.6-2.4c-1.4-0.6-2.9-0.9-4.4-0.9c-1.6,0-3.2,0.3-4.7,1c-1.4,0.6-2.7,1.6-3.7,2.7c-0.2,0.2-0.2,0.5,0,0.7c0.2,0.2,0.5,0.2,0.7,0c2-2.2,4.7-3.4,7.6-3.4c5.7,0,10.3,4.6,10.3,10.3c0,0.8-0.1,1.7-0.3,2.5c-0.1,0.3,0.1,0.6,0.4,0.6c0,0,0.1,0,0.1,0c0.2,0,0.5-0.2,0.5-0.4c0.2-0.9,0.3-1.8,0.3-2.7C36.4,23.5,36.1,22,35.5,20.6z">
+									</path>
+									<path class="st0"
+										  d="M31.7,32.9c-0.2,0.1-0.3,0.3-0.5,0.4l-0.8-3.9c-0.1-0.5-0.6-1-1.2-1h-8.5c-0.5,0-1.1,0.4-1.2,1l-0.8,3.9c-2.5-1.9-4.1-4.9-4.1-8.2c0-1.1,0.2-2.2,0.5-3.2c0.1-0.3-0.1-0.6-0.3-0.7c-0.3-0.1-0.6,0.1-0.7,0.3c-0.4,1.1-0.6,2.3-0.6,3.6c0,1.5,0.3,3,0.9,4.4c0.6,1.4,1.4,2.6,2.4,3.6c1,1,2.3,1.9,3.6,2.4c1.4,0.6,2.9,0.9,4.4,0.9c1.4,0,2.7-0.2,4-0.7c1.2-0.5,2.4-1.1,3.4-2c0.2-0.2,0.2-0.5,0.1-0.7C32.2,32.7,31.9,32.7,31.7,32.9z">
+									</path>
+								</g>
+							</svg>
+						</a>
+					}
+
+				</div>
+			</div>
+
+			<div class="JG">
+				<div class="swiper mySwiper-vertical">
+					<div class="swiper-wrapper vertical-JG">
+						<div class="swiper-slide">[Station Announcement] The general moderation rules are here! Please read carefully to avoid violating <a href="#" class="text-alert">Beginner's Basics</a> (2023-10-14)</div>
+						<div class="swiper-slide">[Station Announcement] Please follow forum rules, post relevant content in the appropriate sections, or else we'll revoke your posting privileges. (2023-10-14)</div>
+						<div class="swiper-slide">[Station Announcement] No online violence allowed, please use friendly comments and communication. (2023-10-14)</div>
+						<div class="swiper-slide">[Station Announcement] No explicit content posts allowed, or else your account will be blocked. (2023-10-14)</div>
+						<div class="swiper-slide">[Station Announcement] Please refrain from posting false information that could mislead others. (2023-10-14)</div>
+						<div class="swiper-slide">
+							[Station Announcement] If you have any questions about the forum, you can click on <a href='#' class='text-alert'>Customer Support</a> to get help. (2023-10-14)
+						</div>
+						<div class="swiper-slide">[Station Announcement] Avoid sharing your account and password with others, or face the consequences yourself. (2023-10-14)</div>
+						<div class="swiper-slide">[Station Announcement] Exercise caution in trusting others and avoid falling for scams. (2023-10-14)</div>
+						<div class="swiper-slide">[Station Announcement] Please be cautious about any content related to transferring money to others to avoid falling for scams. (2023-10-14)</div>
+						<div class="swiper-slide">[Station Announcement] Please protect the privacy of others. (2023-10-14)</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+		<section class="top-container">
+			<div class="showtitle">
+				<div class="left-title">
+					<p>Views: 3847 | Replies: 3</p>
+				</div>
+				<div class="right-title">
+					<p>[Basics for Beginners] Rules of this forum</p>
+				</div>
+			</div>
+			<div class="hr-title"></div>
+
+			<div class="showtitle-name">
+				<div class="username">
+					<p>Admin</p>
+					<div class="dais"></div>
+				</div>
+				<div class="time-name">
+					<p>Published at 02:36 PM the day before yesterday | View only this author | Browse in reverse order</p>
+					<div class="dais"></div>
+				</div>
+			</div>
+
+
+			<div>
+			</div>
+
+			<div class="showcase">
+				<div class="left-container">
+					<div class="avatar">
+						<img src="~/Img/Avatar/Avatar.png" />
+					</div>
+					<div class="level">
+						<p class="name-position">Admin</p>
+						<p class="exple"><span class="me">1</span> / <span class="all">1</span></p>
+					</div>
+					<div class="Tzi">
+						<div>
+							<p>Posts</p>
+							<p>Friends</p>
+						</div>
+						<div>
+							<p>0</p>
+							<p>0</p>
+						</div>
+					</div>
+					@*<div class="community">
+					<div class="row-type-community">
+					<a href="#">Visit Profile</a>
+					<a href="#">Make Friends</a>
+					</div>
+					<div class="row-type-community">
+					<a href="#">Say Hello</a>
+					<a href="#">Send a Message</a>
+					</div>
+					</div>*@
+				</div>
+
+
+				<div class="right-container">
+					<p class="twe">This post is for guiding beginners on the basics and rapid progress.</p>
+					<div class="box-face">
+						<div class="face">
+							<div class="eye"></div>
+							<div class="eye right"></div>
+							<div class="mouth happy"></div>
+						</div>
+						<div class="shadow scale"></div>
+					</div>
+					<p class="title-kf"> I. Forum General Rules and Regulations</p>
+					<p class="word-kf">1. For any newcomer, regardless of which forum you visit, reading the forum rules is a necessary rule for your growth and survival. Perhaps we only post or reply in violation of the rules to earn money; this will result in point deductions as a penalty.</p>
+					<p class="word-kf">2. If you don't know how to post, please refer to the formatting of other people's posts, provided that you know which section your resources belong to. Forum section resources are usually based on the content of a larger title category.</p>
+					<p class="word-kf">3. Avoid blind posting and meaningless replies, try to have replies with more than "fifteen words."</p>
+					<p class="word-kf">4. Emphasize that interaction on the forum should be based on respect and politeness. Malicious attacks, insults, discrimination, or provocation of other users are prohibited. Constructive discussion and criticism are encouraged.</p>
+					<p class="word-kf">5. Remind users not to share sensitive personal information on the forum, such as phone numbers, addresses, ID numbers, etc. and emphasize that administrators and other users should respect and protect the privacy of others.</p>
+					<p class="word-kf">6. Encourage users to share original content and make it clear that infringing on the intellectual property of others, such as unauthorized copying and pasting of articles, images, or other content, is prohibited.</p>
+					<p class="word-kf">7. Specify the method and frequency of advertising. If advertising is allowed, there should be clear sections or rules, and the abuse of posts or replies to promote products or services should be prohibited.</p>
+					<p class="word-kf">8. Provide a reporting mechanism that allows users to report violations anonymously or publicly. Administrators should actively handle these reports and take appropriate actions.</p>
+					<p class="word-kf">9. Clearly outline the punishment measures for violations, including point deductions, temporary or permanent account bans, etc. At the same time, emphasize that administrators have the right to handle cases at their discretion.</p>
+					<p class="word-kf">10. Rules should be regularly reviewed and updated to adapt to the development and needs of the community. Notify users of any major changes in the rules and ensure that they are aware of the latest rules.</p>
+
+					<p class="title-kf"> II. Content Categories and Tags</p>
+					<p class="word-kf">1. Establish a clear content categorization system to ensure that each topic or post can be correctly classified. For example, you can create main categories such as technical discussions, entertainment, lifestyle guides, etc., and then create more specific subcategories under each main category.</p>
+					<p class="word-kf">2. Introduce a tagging system that allows users to add tags to their posts to describe the content more accurately. Tags should cover topics, keywords, and relevance so that other users can easily search and filter posts of interest.</p>
+					<p class="word-kf">3. Enforce mandatory requirements for users to select categories and tags when posting to ensure that each post has clear categorization and tags. This helps improve the discoverability of posts.</p>
+					<p class="word-kf">4. Allow users to suggest new tags and add them to the tag list after review by administrators. This helps keep the tag system updated and flexible.</p>
+
+					<p class="title-kf"> III. Protection of Minors</p>
+					<p class="word-kf">1. Ensure that your forum has an age restriction mechanism to limit access to inappropriate content for minors. You can require users to provide age information during registration and take appropriate measures to verify age.</p>
+					<p class="word-kf">2. Advocate for parents to supervise and guide the online activities of their underage children. Provide parental guidelines to help them understand how to protect their children from inappropriate content.</p>
+					<p class="word-kf">3. If possible, create a dedicated area for underage users that contains age-appropriate content and restricts their access to adult content.</p>
+					<p class="word-kf">4. For certain sensitive content, additional age verification measures can be taken to ensure that only users of appropriate age can access it.</p>
+					<p class="word-kf">5. Provide underage users with education on online safety and privacy. Emphasize not sharing personal information with strangers, not clicking on suspicious links, not responding to inappropriate messages, etc.</p>
+
+					<p class="title-kf"> IV. Language and Manner of Speech</p>
+					<p class="word-kf">1. Users should use respectful language when posting and replying, avoiding insulting, attacking, or belittling others.</p>
+					<p class="word-kf">2. Users should avoid arguing and disputes and express their opinions in a rational and constructive manner.</p>
+					<p class="word-kf">3. Humor can be an interesting way of expression, but users should use it carefully to avoid misunderstanding or offending others.</p>
+					<p class="word-kf">4. Encourage users to respect diverse viewpoints and cultural backgrounds and avoid discrimination or prejudice.</p>
+					<p class="word-kf">5. Users should not use uncivil, obscene, or inappropriate language to maintain a civilized atmosphere on the forum.</p>
+
+					<p class="title-kf"> V. Bots and Automation Programs</p>
+					<p class="word-kf">1. Users must not abuse bots or automation programs to disrupt the forum's order, manipulate scores, or engage in malicious activities.</p>
+					<p class="word-kf">2. If users' bots perform web scraping, they should comply with the website's web scraping rules, including the frequency of scraping and access permissions.</p>
+
+					<p class="title-kf"> VI. Integrity and Honesty</p>
+					<p class="word-kf">1. Users should provide truthful and accurate personal information and should not use false identities.</p>
+					<p class="word-kf">2. Users must not intentionally deceive other users, including false statements, false advertising, or misleading information.</p>
+					<p class="word-kf">3. If users make commitments or promise certain behaviors on the forum, they should make every effort to honor them to maintain integrity.</p>
+
+					<p class="title-kf"> VII. Prohibition of Sensitive Topics</p>
+					<p class="word-kf">1. Specify which topics are considered sensitive to prevent misunderstandings.</p>
+					<p class="word-kf">2. Users must not intentionally provoke or incite disputes on sensitive topics.</p>
+					<p class="word-kf">3. Encourage users to communicate privately and resolve disputes when generating controversy on sensitive topics, rather than arguing in public forums.</p>
+					<p class="word-kf">4. Provide a mechanism for users to monitor and report behaviors that may violate the rules prohibiting sensitive topics.</p>
+				</div>
+
+			</div>
+
+	</div>
+
+
+	</section>
+
+	</div>
+	<span id="scrolltop" onclick="window.scrollTo('0','0')">
+		<img src="../img/backtopIcon.png" />
+	</span>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<script src="~/js/Home/HomeJs.js"></script>
+	<script src="~/js/Public/Size.js"></script>
+</body>
+
+</html>
+

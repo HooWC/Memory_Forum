@@ -1,0 +1,12 @@
+D:\桌面\Platform\Platform\Platform\Platform_DomainModelEntity\bin\Debug\net6.0\Platform_DomainModelEntity.deps.json
+D:\桌面\Platform\Platform\Platform\Platform_DomainModelEntity\bin\Debug\net6.0\Platform_DomainModelEntity.dll
+D:\桌面\Platform\Platform\Platform\Platform_DomainModelEntity\bin\Debug\net6.0\Platform_DomainModelEntity.pdb
+D:\桌面\Platform\Platform\Platform\Platform_DomainModelEntity\obj\Debug\net6.0\Platform_DomainModelEntity.csproj.AssemblyReference.cache
+D:\桌面\Platform\Platform\Platform\Platform_DomainModelEntity\obj\Debug\net6.0\Platform_DomainModelEntity.GeneratedMSBuildEditorConfig.editorconfig
+D:\桌面\Platform\Platform\Platform\Platform_DomainModelEntity\obj\Debug\net6.0\Platform_DomainModelEntity.AssemblyInfoInputs.cache
+D:\桌面\Platform\Platform\Platform\Platform_DomainModelEntity\obj\Debug\net6.0\Platform_DomainModelEntity.AssemblyInfo.cs
+D:\桌面\Platform\Platform\Platform\Platform_DomainModelEntity\obj\Debug\net6.0\Platform_DomainModelEntity.csproj.CoreCompileInputs.cache
+D:\桌面\Platform\Platform\Platform\Platform_DomainModelEntity\obj\Debug\net6.0\Platform_DomainModelEntity.dll
+D:\桌面\Platform\Platform\Platform\Platform_DomainModelEntity\obj\Debug\net6.0\refint\Platform_DomainModelEntity.dll
+D:\桌面\Platform\Platform\Platform\Platform_DomainModelEntity\obj\Debug\net6.0\Platform_DomainModelEntity.pdb
+D:\桌面\Platform\Platform\Platform\Platform_DomainModelEntity\obj\Debug\net6.0\ref\Platform_DomainModelEntity.dll

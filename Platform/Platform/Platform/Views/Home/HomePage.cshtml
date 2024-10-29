@@ -1,0 +1,592 @@
+﻿@using Microsoft.AspNetCore.Http
+@using Platform_DomainModelEntity.Models;
+@using Platform_Infrastruture.Api;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+@{
+	ViewData["Title"] = "HomePage";
+	Layout = null;
+}
+
+@{
+	string userValue = @HttpContextAccessor.HttpContext.Session.GetString("user");
+	var db = new User();
+	db = null;
+	if (userValue != "" && userValue != null)
+	{
+		UserApi userapi = new UserApi();
+		var data = userapi.GetAllUser().Result;
+		db = data.Where(x => x.Id == Convert.ToInt32(userValue)).FirstOrDefault();
+	}
+
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Memory</title>
+	<link rel="stylesheet" href="~/css/Home/HomeStyle.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+	<div id="warning">
+		<img src="~/Img/warning/warning.png" />
+	</div>
+
+	<div id="content_id">
+
+		@*@if (@ViewBag.test != null)
+		{
+		<p>@ViewBag.test.username</p>
+		}*@
+
+		<div class="video-app">
+
+			<div class="header">
+				<div class="header-left">
+					<a href="~/Home/HomePage">
+						<img src="~/Img/LogoWhite.png" class="logo" />
+					</a>
+				</div>
+
+				<div class="header-menu">
+					<a href="~/Home/HomePage" class="menu-item active">Home</a>
+					<a href="~/Home/Daily_SignIn" class="menu-item">Check-In</a>
+					<a href="~/Home/Rules" class="menu-item notify">Beginner's Basics</a>
+					<a href="~/Home/Customer_Services" class="menu-item">Service</a>
+					<a href="~/Home/Common_Problems" class="menu-item">FAQs</a>
+				</div>
+
+				<div class="user-settings">
+					@if (db != null)
+					{
+						<div class="login-register-box">
+							<a href="~/Login/Logout">Log out</a>
+						</div>
+
+						<a href="~/User/Index">
+							<img class="user-profile "
+								 src="~/Img/Avatar/@db.avatar"
+								 alt="">
+						</a>
+					}
+					else
+					{
+						<div class="login-register-box">
+							<a href="~/Login/Login">Login</a>
+							<a href="~/Login/Register">Register</a>
+						</div>
+
+						<a href="~/Login/Login">
+							<svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 50 50">
+								<g>
+									<path class="st0"
+										  d="M25,27c2.5,0,4.5-2,4.5-4.5S27.5,18,25,18s-4.5,2-4.5,4.5S22.5,27,25,27z">
+									</path>
+									<path class="st0"
+										  d="M35.5,20.6C34.9,19.2,34.1,18,33,17c-1-1-2.3-1.9-3.6-2.4c-1.4-0.6-2.9-0.9-4.4-0.9c-1.6,0-3.2,0.3-4.7,1c-1.4,0.6-2.7,1.6-3.7,2.7c-0.2,0.2-0.2,0.5,0,0.7c0.2,0.2,0.5,0.2,0.7,0c2-2.2,4.7-3.4,7.6-3.4c5.7,0,10.3,4.6,10.3,10.3c0,0.8-0.1,1.7-0.3,2.5c-0.1,0.3,0.1,0.6,0.4,0.6c0,0,0.1,0,0.1,0c0.2,0,0.5-0.2,0.5-0.4c0.2-0.9,0.3-1.8,0.3-2.7C36.4,23.5,36.1,22,35.5,20.6z">
+									</path>
+									<path class="st0"
+										  d="M31.7,32.9c-0.2,0.1-0.3,0.3-0.5,0.4l-0.8-3.9c-0.1-0.5-0.6-1-1.2-1h-8.5c-0.5,0-1.1,0.4-1.2,1l-0.8,3.9c-2.5-1.9-4.1-4.9-4.1-8.2c0-1.1,0.2-2.2,0.5-3.2c0.1-0.3-0.1-0.6-0.3-0.7c-0.3-0.1-0.6,0.1-0.7,0.3c-0.4,1.1-0.6,2.3-0.6,3.6c0,1.5,0.3,3,0.9,4.4c0.6,1.4,1.4,2.6,2.4,3.6c1,1,2.3,1.9,3.6,2.4c1.4,0.6,2.9,0.9,4.4,0.9c1.4,0,2.7-0.2,4-0.7c1.2-0.5,2.4-1.1,3.4-2c0.2-0.2,0.2-0.5,0.1-0.7C32.2,32.7,31.9,32.7,31.7,32.9z">
+									</path>
+								</g>
+							</svg>
+						</a>
+					}
+
+				</div>
+			</div>
+
+			<div class="JG">
+				<div class="swiper mySwiper-vertical">
+					<div class="swiper-wrapper vertical-JG">
+						<div class="swiper-slide">[Station Announcement] The general moderation rules are here! Please read carefully to avoid violating <a href="~/Home/Rules" class="text-alert">Beginner's Basics</a> (2023-10-14)</div>
+						<div class="swiper-slide">[Station Announcement] Please follow forum rules, post relevant content in the appropriate sections, or else we'll revoke your posting privileges. (2023-10-14)</div>
+						<div class="swiper-slide">[Station Announcement] No online violence allowed, please use friendly comments and communication. (2023-10-14)</div>
+						<div class="swiper-slide">[Station Announcement] No explicit content posts allowed, or else your account will be blocked. (2023-10-14)</div>
+						<div class="swiper-slide">[Station Announcement] Please refrain from posting false information that could mislead others. (2023-10-14)</div>
+						<div class="swiper-slide">
+							[Station Announcement] If you have any questions about the forum, you can click on <a href='~/Home/CUstomer_Services' class='text-alert'>Customer Support</a> to get help. (2023-10-14)
+						</div>
+						<div class="swiper-slide">[Station Announcement] Avoid sharing your account and password with others, or face the consequences yourself. (2023-10-14)</div>
+						<div class="swiper-slide">[Station Announcement] Exercise caution in trusting others and avoid falling for scams. (2023-10-14)</div>
+						<div class="swiper-slide">[Station Announcement] Please be cautious about any content related to transferring money to others to avoid falling for scams. (2023-10-14)</div>
+						<div class="swiper-slide">[Station Announcement] Please protect the privacy of others. (2023-10-14)</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="input_box">
+				<div class="img">
+					<img src="~/Img/searchIcon.png" />
+				</div>
+				<input type="text" placeholder="Enter the title you are looking for" id="search" />
+				<p id="search_btn">Search</p>
+			</div>
+
+			<div class="wrapper" style="margin:0px 5px 5px 5px;">
+
+				<div class="profile-info">
+					<div class="profile-item">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 469.33 469.33" fill="currentColor">
+							<path d="M320 213.33c35.3 0 63.79-28.69 63.79-64 0-35.3-28.48-64-63.79-64-35.3 0-64 28.7-64 64 0 35.31 28.7 64 64 64zM149.33 213.33c35.31 0 63.79-28.69 63.79-64 0-35.3-28.48-64-63.79-64-35.3 0-64 28.7-64 64 0 35.31 28.7 64 64 64zM149.33 256C99.52 256 0 280.96 0 330.67V384h298.67v-53.33c0-49.71-99.52-74.67-149.34-74.67zM320 256c-6.19 0-13.12.43-20.59 1.17 24.75 17.82 41.92 41.82 41.92 73.5V384h128v-53.33c0-49.71-99.52-74.67-149.33-74.67z" />
+						</svg>
+						@ViewBag.usercount
+					</div>
+					<div class="profile-item">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 469.33 469.33">
+							<path d="M234.67 170.67c-35.31 0-64 28.69-64 64s28.69 64 64 64 64-28.7 64-64-28.7-64-64-64z" />
+							<path d="M234.67 74.67C128 74.67 36.9 141 0 234.67c36.9 93.65 128 160 234.67 160 106.77 0 197.76-66.35 234.66-160-36.9-93.66-127.89-160-234.66-160zm0 266.66c-58.88 0-106.67-47.78-106.67-106.66S175.79 128 234.67 128s106.66 47.79 106.66 106.67-47.78 106.66-106.66 106.66z" />
+						</svg>
+						@ViewBag.postcount
+					</div>
+					<div class="profile-item">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 475.43 475.43">
+							<path d="M306.9 164.57l78.9-86.2a7.83 7.83 0 001.56-8.36 8.36 8.36 0 00-7.3-4.7h-253.4s-3.13 0-3.13.52v-9.4a26.12 26.12 0 0021.94-27.7A28.73 28.73 0 00117.26 0a29.78 29.78 0 00-29.78 28.73 30.82 30.82 0 0020.37 27.7v411.16a7.84 7.84 0 0015.68 0V263.84h256.52c3.2.2 6.17-1.7 7.31-4.7a8.36 8.36 0 00-1.56-8.36l-78.9-86.2z" />
+						</svg>
+						@ViewBag.today
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<section class="top-container-swiper">
+			<header class="showcase-swiper">
+				<div class="swiper mySwiper">
+					<div class="swiper-wrapper wrapper-img">
+						<a href="~/Home/Rules" class="swiper-slide"><img src="~/Img/home1.png" /></a>
+						<a href="~/ZonePage/Zone?type=findapartner" class="swiper-slide"><img src="~/Img/home2.png" /></a>
+						<a href="~/ZonePage/Zone?type=music" class="swiper-slide"><img src="~/Img/home3.png" /></a>
+						<a href="~/ZonePage/Zone?type=lifeskillsdiscussion" class="swiper-slide"><img src="~/Img/home4.png" /></a>
+						<a href="~/ZonePage/Zone?type=anime" class="swiper-slide"><img src="~/Img/home5.png" /></a>
+						<a href="~/ZonePage/Zone?type=internship" class="swiper-slide"><img src="~/Img/home6.png" /></a>
+						<a href="~/ZonePage/Zone?type=maintainingfitness" class="swiper-slide"><img src="~/Img/home7.png" /></a>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</header>
+
+			<div class="right-top-swiper">
+
+				<div class="success-box">
+					<div class="nex_only_here nex_only_here_QZ">
+						<div>
+							<h2 style="margin-bottom:15px;"><span></span>Zone sharing</h2>
+						</div>
+						<a href="~/ZonePage/Zone?type=emotional">Share more</a>
+					</div>
+					<div class="box-zqfx">
+						<img src="~/Img/mm1.jpg" />
+						<p class="box-zqfx-title">Emotional station area</p>
+						@foreach (var item in ViewBag.emotionView)
+						{
+							<div class="box_content_zone">
+								<a href="~/Content/PageTurn?id=@item.Id&&type=@item.type_main" class="box-zqfx-word">@item.title</a>
+							</div>
+						}
+					</div>
+				</div>
+
+				<div class="success-box">
+					<div class="nex_only_here nex_only_here_QZ">
+						<div>
+							<h2 style="margin-bottom:15px;"><span></span>Zone sharing</h2>
+						</div>
+						<a href="~/ZonePage/Zone?type=music">Share more</a>
+					</div>
+					<div class="box-zqfx">
+						<img src="~/Img/mm2.png" />
+						<p class="box-zqfx-title">Music Sharing area</p>
+						@foreach (var item in ViewBag.musicView)
+						{
+							<div class="box_content_zone">
+								<a href="~/Content/PageTurn?id=@item.Id&&type=@item.type_main" class="box-zqfx-word">@item.title</a>
+							</div>
+						}
+					</div>
+				</div>
+
+				<div class="success-box">
+					<div class="nex_only_here nex_only_here_QZ">
+						<div>
+							<h2 style="margin-bottom:15px;"><span></span>Zone sharing</h2>
+						</div>
+						<a href="~/ZonePage/Zone?type=hzw">Share more</a>
+					</div>
+					<div class="box-zqfx">
+						<img src="~/Img/mm3.jpg" />
+						<p class="box-zqfx-title">One Piece Zone</p>
+						@foreach (var item in ViewBag.animeView)
+						{
+							<div class="box_content_zone">
+								<a href="~/Content/PageTurn?id=@item.Id&&type=@item.type_main" class="box-zqfx-word">@item.title</a>
+							</div>
+						}
+					</div>
+				</div>
+
+			</div>
+
+
+		</section>
+
+
+
+
+
+		<!-- Top Container -->
+		<section class="top-container">
+			<header class="showcase">
+				<p class="hot-word">Topic</p>
+				<div class="box-showcase" id="box-showcase">
+					@foreach (var item in ViewBag.randomlist)
+					{
+						<a href="~/Content/PageTurn?id=@item.Id&&type=@item.type" class="container-box">
+							<div>
+								<img src="~/Img/Post/@item.ImgList" alt="@item.ImgList">
+							</div>
+							<div>
+								<p class="container-title">@item.title</p>
+								<p class="container-a">Author：@item.username</p>
+							</div>
+						</a>
+					}
+				</div>
+
+			</header>
+
+			<div class="right-top" id="right-top">
+			</div>
+
+
+		</section>
+
+		<div class="tall-game">
+			<p>Zone Discussion</p>
+			<div class="swiper mySwiper-game">
+				<div class="swiper-wrapper game-swiper">
+					<a href="~/ZonePage/Zone?type=genshin" class="swiper-slide game-swiper-slider">
+						<div class="dark"></div>
+						<img src="~/Img/Zone/b69.png" />
+						<p>Genshin Impact</p>
+					</a>
+					<a href="~/ZonePage/Zone?type=honkai" class="swiper-slide game-swiper-slider">
+						<div class="dark"></div>
+						<img src="~/Img/Zone/Stars70.png" />
+						<p>Honkai Impact: Star Rail</p>
+					</a>
+					<a href="~/ZonePage/Zone?type=pubg" class="swiper-slide game-swiper-slider">
+						<div class="dark"></div>
+						<img src="~/Img/Zone/b71.png" />
+						<p>PUBG Mobile</p>
+					</a>
+					<a href="~/ZonePage/Zone?type=league" class="swiper-slide game-swiper-slider">
+						<div class="dark"></div>
+						<img src="~/Img/Zone/b72.png" />
+						<p>League of Legends</p>
+					</a>
+					<a href="~/ZonePage/Zone?type=game" class="swiper-slide game-swiper-slider">
+						<div class="dark"></div>
+						<img src="~/Img/Zone/b73.png" />
+						<p>Game Disussions</p>
+					</a>
+					<a href="~/ZonePage/Zone?type=anime" class="swiper-slide game-swiper-slider">
+						<div class="dark"></div>
+						<img src="~/Img/Zone/b78.png" />
+						<p>Anime Discussions</p>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="type-tell">
+			<p class="title_class">CLASSIFICATION</p>
+			<div class="style-type-home">
+				<div class="box-type">
+
+					<div class="box-container-type">
+						<div>
+							<img src="~/Img/title1.png" />
+							<ul class="ul-class">
+								<li><a href="~/ZonePage/Zone?type=casual">Casual Chat</a></li>
+								<li><a href="~/ZonePage/Zone?type=emotional">Emotional Station</a></li>
+								<li><a href="~/ZonePage/Zone?type=findapartner">Find a Partner</a></li>
+							</ul>
+
+						</div>
+					</div>
+
+					<div class="box-container-type">
+						<div>
+							<img src="~/Img/title2.png" />
+							<ul class="ul-class">
+								<li><a href="~/ZonePage/Zone?type=penangcuisine">Penang Cuisine</a></li>
+								<li><a href="~/ZonePage/Zone?type=kualalumpurcuisine">Kuala Lumpur Cuisine</a></li>
+								<li><a href="~/ZonePage/Zone?type=internationalcuisine">International Cuisine</a></li>
+								<li><a href="~/ZonePage/Zone?type=foodcreation">Food Creation/Sharing</a></li>
+							</ul>
+
+						</div>
+					</div>
+
+					<div class="box-container-type">
+						<div>
+							<img src="~/Img/title3.png" />
+							<ul class="ul-class">
+								<li><a href="~/ZonePage/Zone?type=travel">Travel Adventures</a></li>
+								<li><a href="~/ZonePage/Zone?type=urban">Urban Excursions</a></li>
+								<li><a href="~/ZonePage/Zone?type=overseas">Overseas Travel</a></li>
+							</ul>
+
+						</div>
+					</div>
+
+					<div class="box-container-type">
+						<div>
+							<img src="~/Img/title4.png" />
+							<ul class="ul-class">
+								<li><a href="~/ZonePage/Zone?type=snack">Snack Discussion</a></li>
+								<li><a href="~/ZonePage/Zone?type=nutritious">Nutritious Foods</a></li>
+								<li><a href="~/ZonePage/Zone?type=healthy">Healthy Practices</a></li>
+							</ul>
+
+						</div>
+					</div>
+
+				</div>
+
+				<div class="box-type">
+					<div class="box-container-type">
+						<div>
+							<img src="~/Img/title5.png" />
+							<ul class="ul-class">
+								<li><a href="~/ZonePage/Zone?type=maintainingfitness">Maintaining Fitness <span>Hot</span></a></li>
+								<li><a href="~/ZonePage/Zone?type=buildingrelationships">Building Relationships</a></li>
+								<li><a href="~/ZonePage/Zone?type=personalgrowth">Personal Growth</a></li>
+								<li><a href="~/ZonePage/Zone?type=happinesstechniques">Happiness Techniques</a></li>
+								<li><a href="~/ZonePage/Zone?type=lifeskillsdiscussion">Life Skills Discussion</a></li>
+							</ul>
+
+						</div>
+					</div>
+
+					<div class="box-container-type">
+						<div>
+							<img src="~/Img/title6.png" />
+							<ul class="ul-class">
+								<li><a href="~/ZonePage/Zone?type=malaysiadiscussion">Malaysia Discussion</a></li>
+								<li><a href="~/ZonePage/Zone?type=foreigndiscussions">Foreign Discussions</a></li>
+								<li><a href="~/ZonePage/Zone?type=newsdiscussions">News Discussions</a></li>
+								<li><a href="~/ZonePage/Zone?type=ideasharing">Idea Sharing</a></li>
+							</ul>
+
+						</div>
+					</div>
+
+					<div class="box-container-type">
+						<div>
+							<img src="~/Img/title7.png" />
+							<ul class="ul-class">
+								<li><a href="~/ZonePage/Zone?type=basketball">Basketball Discussion</a></li>
+								<li><a href="~/ZonePage/Zone?type=soccer">Soccer Discussion</a></li>
+								<li><a href="~/ZonePage/Zone?type=baseball">Baseball Discussion</a></li>
+								<li><a href="~/ZonePage/Zone?type=sports">Sports Discussion/Sharing</a></li>
+							</ul>
+
+						</div>
+					</div>
+				</div>
+
+
+				<div class="box-type">
+					<div class="box-container-type">
+						<div>
+							<img src="~/Img/title8.png" />
+							<ul class="ul-class">
+								<li><a href="~/ZonePage/Zone?type=resume">Resume Search</a></li>
+								<li><a href="~/ZonePage/Zone?type=corporate">Corporate Recruitment</a></li>
+								<li><a href="~/ZonePage/Zone?type=internship">Internship Resumes</a></li>
+							</ul>
+
+						</div>
+					</div>
+
+					<div class="box-container-type">
+						<div>
+							<img src="~/Img/title9.png" />
+							<ul class="ul-class">
+								<li><a href="#">Topic Polls<span style="background:dodgerblue;">Stay tuned</span></a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="box-container-type">
+						<div>
+							<img src="~/Img/title10.png" />
+							<ul class="ul-class">
+								<li><a href="~/ZonePage/Zone?type=englishlearning">English Learning</a></li>
+								<li><a href="~/ZonePage/Zone?type=chineselearning">Chinese Learning</a></li>
+								<li><a href="~/ZonePage/Zone?type=programminglearning">Programming Learning</a></li>
+								<li><a href="~/ZonePage/Zone?type=businesslearning">Business Learning</a></li>
+								<li><a href="~/ZonePage/Zone?type=howtolearn">How to Learn</a></li>
+								<li><a href="~/ZonePage/Zone?type=programmingdiscussion">Programming Discussion</a></li>
+								<li><a href="~/ZonePage/Zone?type=learningdiscussion">Learning Discussion</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="box-type">
+					<div class="box-container-type">
+						<div>
+							<img src="~/Img/title11.png" />
+							<ul class="ul-class">
+								<li><a href="~/ZonePage/Zone?type=penang">Penang</a></li>
+								<li><a href="~/ZonePage/Zone?type=ipoh">Ipoh</a></li>
+								<li><a href="~/ZonePage/Zone?type=kualalumpur">Kuala Lumpur</a></li>
+								<li><a href="~/ZonePage/Zone?type=taiping">Taiping</a></li>
+								<li><a href="~/ZonePage/Zone?type=bukitmertajam">Bukit Mertajam</a></li>
+								<li><a href="~/ZonePage/Zone?type=jelutong">Jelutong</a></li>
+								<li><a href="~/ZonePage/Zone?type=bayanlepas">Bayan Lepas</a></li>
+								<li><a href="~/ZonePage/Zone?type=kulim">Kulim</a></li>
+								<li><a href="~/ZonePage/Zone?type=subangjaya">Subang Jaya</a></li>
+								<li><a href="~/ZonePage/Zone?type=klang">Klang</a></li>
+								<li><a href="~/ZonePage/Zone?type=shahalam">Shah Alam</a></li>
+								<li><a href="~/ZonePage/Zone?type=malacca">Malacca</a></li>
+								<li><a href="~/ZonePage/Zone?type=muar">Muar</a></li>
+								<li><a href="~/ZonePage/Zone?type=johor">Johor</a></li>
+								<li><a href="~/ZonePage/Zone?type=kotabahru">Kota Bahru</a></li>
+							</ul>
+
+						</div>
+					</div>
+
+					<div class="box-container-type">
+						<div>
+							<img src="~/Img/title12.png" />
+							<ul class="ul-class">
+								<li><a href="~/ZonePage/Zone?type=jaychou">Jay Chou</a></li>
+								<li><a href="~/ZonePage/Zone?type=mayday">Mayday</a></li>
+								<li><a href="~/ZonePage/Zone?type=huachenyu">Hua Chenyu</a></li>
+								<li><a href="~/ZonePage/Zone?type=mj116">MJ116</a></li>
+								<li><a href="~/ZonePage/Zone?type=oneokrock">One Ok Rock</a></li>
+								<li><a href="~/ZonePage/Zone?type=english">English Music</a></li>
+								<li><a href="~/ZonePage/Zone?type=chinese">Chinese Music</a></li>
+								<li><a href="~/ZonePage/Zone?type=animeop">Anime OP Music</a></li>
+								<li><a href="~/ZonePage/Zone?type=internationalmusic">International Music</a></li>
+								<li><a href="~/ZonePage/Zone?type=relaxed">Relaxed Music</a></li>
+								<li><a href="~/ZonePage/Zone?type=music">Music Sharing/Discussion</a></li>
+								<li><a href="~/ZonePage/Zone?type=pop">Pop Music</a></li>
+								<li><a href="~/ZonePage/Zone?type=rock">Rock Zone</a></li>
+								<li><a href="~/ZonePage/Zone?type=rap">Rap Zone</a></li>
+								<li><a href="~/ZonePage/Zone?type=createlyrics">Create/Share Lyrics</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="box-type">
+					<div class="box-container-type">
+						<div>
+							<img src="~/Img/title13.png" />
+							<ul class="ul-class">
+								<li><a href="~/ZonePage/Zone?type=genshin">Genshin Impact</a></li>
+								<li><a href="~/ZonePage/Zone?type=honkai">Honkai Impact: Star Rail<span>Hot</span></a></li>
+								<li><a href="~/ZonePage/Zone?type=pubg">PUBG Mobile</a></li>
+								<li><a href="~/ZonePage/Zone?type=league">League of Legends</a></li>
+								<li><a href="~/ZonePage/Zone?type=game">Game Discussions</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="box-container-type">
+						<div>
+							<img src="~/Img/title14.png" />
+							<ul class="ul-class">
+								<li><a href="~/ZonePage/Zone?type=hzw">One Piece<span>Hot</span></a></li>
+								<li><a href="~/ZonePage/Zone?type=hyrz">Naruto</a></li>
+								<li><a href="~/ZonePage/Zone?type=sao">Sword Art Online</a></li>
+								<li><a href="~/ZonePage/Zone?type=bleach">Bleach</a></li>
+								<li><a href="~/ZonePage/Zone?type=gintama">Gintama</a></li>
+								<li><a href="~/ZonePage/Zone?type=spies">SPY x FAMILY</a></li>
+								<li><a href="~/ZonePage/Zone?type=anime">Anime Discussions<span>Hot</span></a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="box-container-type">
+						<div>
+							<img src="~/Img/title15.png" />
+							<ul class="ul-class">
+								<li><a href="~/ZonePage/Zone?type=honor">The Glory</a></li>
+								<li><a href="~/ZonePage/Zone?type=domestic">Domestic Productions Sharing</a></li>
+								<li><a href="~/ZonePage/Zone?type=korean">Korean Drama Sharing</a></li>
+								<li><a href="~/ZonePage/Zone?type=american">American Drama Sharing</a></li>
+								<li><a href="~/ZonePage/Zone?type=variety">Variety Show Discussions</a></li>
+								<li><a href="~/ZonePage/Zone?type=tv">TV Series Discussions</a></li>
+								<li><a href="~/ZonePage/Zone?type=movie">Movie Discussions</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="container-footer">
+				<p>For the sake of account security, it is recommended to use a computer operating system with Windows 7 or above.</p>
+
+				<hr class="hr-footer" />
+				<p class="content-footer-text">
+					<span class="bold-class">Important Statement:</span> This website operates by allowing users to post messages, and the site does not bear any legal responsibility for the authenticity, completeness, or positions of all messages. The opinions expressed in all messages represent the views of the individual users, not the stance of this website. Users should not rely on the content and should judge its authenticity for themselves. As the discussion area operates with a "message" method, it is not possible to fully monitor all messages. If readers find any problematic messages, please contact us. This site reserves the right to delete any messages and refuse messages from any individuals, while also reserving the right not to delete messages. Please refrain from using offensive language, defamation, promoting pornography or violence, or engaging in personal attacks. This website reserves all legal rights.
+				</p>
+				<hr class="hr-footer" />
+				<div class="footer-svg">
+					<a href="https://www.facebook.com/profile.php?id=61553120353451" target="_blank">
+						<svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 30 30">
+							<path d="M12.6,24.7h3.9v-9.8h2.7l0.3-3.3h-3V9.8c0-0.8,0.2-1.1,0.9-1.1h2.1V5.3h-2.7c-2.9,0-4.2,1.3-4.2,3.7v2.6h-2V15h2C12.6,15,12.6,24.7,12.6,24.7z"></path>
+						</svg>
+					</a>
+
+					<a href="https://www.instagram.com/memoryforumweb/" target="_blank">
+						<svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 30 30">
+							<g>
+								<path d="M15,7.8c2.4,0,2.6,0,3.6,0c0.9,0,1.3,0.2,1.6,0.3c0.4,0.2,0.7,0.4,1,0.7c0.3,0.3,0.5,0.6,0.7,1c0.1,0.3,0.3,0.8,0.3,1.6c0,0.9,0.1,1.2,0.1,3.6s0,2.6-0.1,3.6c0,0.9-0.2,1.3-0.3,1.6c-0.2,0.4-0.4,0.7-0.7,1c-0.3,0.3-0.6,0.5-1,0.7c-0.3,0.1-0.8,0.3-1.6,0.3c-0.9,0-1.2,0-3.6,0s-2.6,0-3.6,0c-0.9,0-1.3-0.2-1.6-0.3c-0.4-0.2-0.7-0.4-1-0.7c-0.3-0.3-0.5-0.6-0.7-1c-0.1-0.3-0.3-0.8-0.3-1.6c0-0.9,0-1.2,0-3.6s0-2.6,0-3.6c0-0.9,0.2-1.3,0.3-1.6c0.2-0.4,0.3-0.7,0.7-1c0.3-0.3,0.6-0.5,1-0.7c0.3-0.1,0.8-0.3,1.6-0.3C12.4,7.8,12.6,7.8,15,7.8 M15,6.2c-2.4,0-2.7,0-3.6,0.1c-0.9,0-1.6,0.2-2.1,0.4c-0.6,0.2-1.1,0.5-1.6,1c-0.5,0.5-0.8,1-1,1.6c-0.2,0.6-0.4,1.2-0.4,2.1c0,0.9-0.1,1.2-0.1,3.6c0,2.4,0,2.7,0.1,3.6c0,0.9,0.2,1.6,0.4,2.1c0.2,0.6,0.5,1.1,1,1.6c0.5,0.5,1,0.8,1.6,1c0.6,0.2,1.2,0.4,2.1,0.4c0.9,0,1.2,0.1,3.6,0.1c2.4,0,2.7,0,3.6-0.1c0.9,0,1.6-0.2,2.1-0.4c0.6-0.2,1.1-0.5,1.6-1c0.5-0.5,0.8-1,1-1.6c0.2-0.6,0.4-1.2,0.4-2.1c0-0.9,0.1-1.2,0.1-3.6c0-2.4,0-2.7-0.1-3.6c0-0.9-0.2-1.6-0.4-2.1c-0.2-0.6-0.5-1.1-1-1.6c-0.5-0.5-1-0.8-1.6-1c-0.6-0.2-1.2-0.4-2.1-0.4C17.7,6.2,17.4,6.2,15,6.2"></path>
+								<path d="M15,10.5c-2.5,0-4.5,2-4.5,4.5s2,4.5,4.5,4.5c2.5,0,4.5-2,4.5-4.5S17.5,10.5,15,10.5 M15,17.9c-1.6,0-2.9-1.3-2.9-2.9s1.3-2.9,2.9-2.9s2.9,1.3,2.9,2.9C17.9,16.6,16.6,17.9,15,17.9"></path>
+								<path d="M20.8,10.3c0,0.6-0.5,1.1-1.1,1.1c-0.6,0-1.1-0.5-1.1-1.1c0-0.6,0.5-1.1,1.1-1.1C20.3,9.2,20.8,9.7,20.8,10.3"></path>
+							</g>
+						</svg>
+					</a>
+
+					<a href="https://www.youtube.com/channel/UCYo-7ahkqpUhafDny2mm6AA" target="_blank">
+						<svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 30 30">
+							<path d="M23.4,10.8c-0.2-0.8-0.8-1.4-1.6-1.6C20.5,8.8,15,8.8,15,8.8s-5.5,0-6.9,0.4C7.4,9.4,6.8,10,6.6,10.8C6.2,12.1,6.2,15,6.2,15s0,2.9,0.4,4.2c0.2,0.8,0.8,1.4,1.6,1.6c1.4,0.4,6.9,0.4,6.9,0.4s5.5,0,6.9-0.4c0.8-0.2,1.4-0.8,1.6-1.6c0.4-1.4,0.4-4.2,0.4-4.2S23.8,12.1,23.4,10.8z M13.2,17.6v-5.3l4.6,2.6L13.2,17.6z"></path>
+						</svg>
+					</a>
+				</div>
+				<hr class="hr-footer" style="margin-bottom:10px;" />
+				<p style="font-size:10px;">Copyright © 2023 Memory Forum (https://www.jkforum.net/) All Rights Reserved.</p>
+			</div>
+		</div>
+
+	</div>
+
+	<span id="scrolltop" onclick="window.scrollTo('0','0')">
+		<img src="~/Img/backtopIcon.png" />
+	</span>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<script src="~/js/Home/HomeJs.js"></script>
+	<script src="~/js/Public/Size.js"></script>
+</body>
+
+</html>
+

@@ -1,0 +1,1121 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\Platform.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Platform.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Advertising\\2024anime.png",
+      "PackagePath": "staticwebassets\\Img\\Advertising\\2024anime.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Advertising\\2024fb.png",
+      "PackagePath": "staticwebassets\\Img\\Advertising\\2024fb.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Advertising\\2024music.png",
+      "PackagePath": "staticwebassets\\Img\\Advertising\\2024music.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Avatar\\4bic222images.png",
+      "PackagePath": "staticwebassets\\Img\\Avatar\\4bic222images.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Avatar\\5hoo123FnyfABLaQAAKWuq.jpeg",
+      "PackagePath": "staticwebassets\\Img\\Avatar\\5hoo123FnyfABLaQAAKWuq.jpeg"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Avatar\\6wengchin882EQQxELfUcAAVwYs.jpg",
+      "PackagePath": "staticwebassets\\Img\\Avatar\\6wengchin882EQQxELfUcAAVwYs.jpg"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Avatar\\6wengchin882Wuta_20230411_230956.jpg",
+      "PackagePath": "staticwebassets\\Img\\Avatar\\6wengchin882Wuta_20230411_230956.jpg"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Avatar\\6wengchin882wallpaper.jpg",
+      "PackagePath": "staticwebassets\\Img\\Avatar\\6wengchin882wallpaper.jpg"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Avatar\\Avatar.png",
+      "PackagePath": "staticwebassets\\Img\\Avatar\\Avatar.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Avatar\\FemaleIconPic.png",
+      "PackagePath": "staticwebassets\\Img\\Avatar\\FemaleIconPic.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Avatar\\MaleIconPic.png",
+      "PackagePath": "staticwebassets\\Img\\Avatar\\MaleIconPic.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Avatar\\femaleAvatar.jpg",
+      "PackagePath": "staticwebassets\\Img\\Avatar\\femaleAvatar.jpg"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Avatar\\maleAvatar.jpg",
+      "PackagePath": "staticwebassets\\Img\\Avatar\\maleAvatar.jpg"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Footer\\footer.png",
+      "PackagePath": "staticwebassets\\Img\\Footer\\footer.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Icon\\HomefriendIcon.png",
+      "PackagePath": "staticwebassets\\Img\\Icon\\HomefriendIcon.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Icon\\SuperIcon.png",
+      "PackagePath": "staticwebassets\\Img\\Icon\\SuperIcon.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Icon\\emailIcon.png",
+      "PackagePath": "staticwebassets\\Img\\Icon\\emailIcon.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Icon\\friendIcon.png",
+      "PackagePath": "staticwebassets\\Img\\Icon\\friendIcon.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Icon\\handIcon.png",
+      "PackagePath": "staticwebassets\\Img\\Icon\\handIcon.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Icon\\iconComputer.png",
+      "PackagePath": "staticwebassets\\Img\\Icon\\iconComputer.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Icon\\iconTopic.png",
+      "PackagePath": "staticwebassets\\Img\\Icon\\iconTopic.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Icon\\nothingIcon.png",
+      "PackagePath": "staticwebassets\\Img\\Icon\\nothingIcon.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\LogoBlack.png",
+      "PackagePath": "staticwebassets\\Img\\LogoBlack.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\LogoWhite.png",
+      "PackagePath": "staticwebassets\\Img\\LogoWhite.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Post\\UID-20.jpg",
+      "PackagePath": "staticwebassets\\Img\\Post\\UID-20.jpg"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Post\\UID-20.webp",
+      "PackagePath": "staticwebassets\\Img\\Post\\UID-20.webp"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Post\\UID-220230904_ent_mackenyu.jpeg",
+      "PackagePath": "staticwebassets\\Img\\Post\\UID-220230904_ent_mackenyu.jpeg"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Post\\UID-2500x500.jpg",
+      "PackagePath": "staticwebassets\\Img\\Post\\UID-2500x500.jpg"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Post\\UID-291MG5mJy2NL.jpg",
+      "PackagePath": "staticwebassets\\Img\\Post\\UID-291MG5mJy2NL.jpg"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Post\\UID-2Alice in Borderland.webp",
+      "PackagePath": "staticwebassets\\Img\\Post\\UID-2Alice in Borderland.webp"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Post\\UID-2Connot1.png",
+      "PackagePath": "staticwebassets\\Img\\Post\\UID-2Connot1.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Post\\UID-2Connot2.png",
+      "PackagePath": "staticwebassets\\Img\\Post\\UID-2Connot2.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Post\\UID-2Connot3.png",
+      "PackagePath": "staticwebassets\\Img\\Post\\UID-2Connot3.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Post\\UID-2Netflix海贼王真人影集宣布续订第二季.webp",
+      "PackagePath": "staticwebassets\\Img\\Post\\UID-2Netflix海贼王真人影集宣布续订第二季.webp"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Post\\UID-2Penang-best-food-16.jpeg",
+      "PackagePath": "staticwebassets\\Img\\Post\\UID-2Penang-best-food-16.jpeg"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Post\\UID-2e694d61ba37fe1a538de058905cd1cfd.jpe",
+      "PackagePath": "staticwebassets\\Img\\Post\\UID-2e694d61ba37fe1a538de058905cd1cfd.jpe"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Post\\UID-2jLvbn5JnwLWhGYwJcapoeWF7Q8o.jpg",
+      "PackagePath": "staticwebassets\\Img\\Post\\UID-2jLvbn5JnwLWhGYwJcapoeWF7Q8o.jpg"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Post\\UID-2maxresdefault.jpg",
+      "PackagePath": "staticwebassets\\Img\\Post\\UID-2maxresdefault.jpg"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Post\\UID-2postpinture.png",
+      "PackagePath": "staticwebassets\\Img\\Post\\UID-2postpinture.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Post\\UID-3w700d1q75cms.jpg",
+      "PackagePath": "staticwebassets\\Img\\Post\\UID-3w700d1q75cms.jpg"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Post\\UID-4DJ-1170x811.png",
+      "PackagePath": "staticwebassets\\Img\\Post\\UID-4DJ-1170x811.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Post\\UID-4TNG-NFC-card.jpg",
+      "PackagePath": "staticwebassets\\Img\\Post\\UID-4TNG-NFC-card.jpg"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Post\\UID-4wind song.png",
+      "PackagePath": "staticwebassets\\Img\\Post\\UID-4wind song.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Post\\UID-4夜 (1).png",
+      "PackagePath": "staticwebassets\\Img\\Post\\UID-4夜 (1).png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Post\\UID-4夜 (2).png",
+      "PackagePath": "staticwebassets\\Img\\Post\\UID-4夜 (2).png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Post\\UID-4夜 (3).png",
+      "PackagePath": "staticwebassets\\Img\\Post\\UID-4夜 (3).png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Post\\UID-4夜 (4).png",
+      "PackagePath": "staticwebassets\\Img\\Post\\UID-4夜 (4).png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Post\\UID-4夜.png",
+      "PackagePath": "staticwebassets\\Img\\Post\\UID-4夜.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\Stars70.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\Stars70.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b1.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b1.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b10.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b10.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b11.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b11.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b14.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b14.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b15.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b15.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b16.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b16.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b17.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b17.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b18.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b18.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b19.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b19.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b2.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b2.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b20.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b20.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b21.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b21.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b22.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b22.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b23.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b23.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b24.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b24.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b25.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b25.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b26.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b26.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b27.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b27.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b28.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b28.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b29.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b29.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b3.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b3.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b30.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b30.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b31.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b31.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b32.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b32.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b33.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b33.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b34.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b34.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b35.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b35.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b36.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b36.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b37.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b37.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b38.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b38.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b39.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b39.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b4.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b4.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b40.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b40.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b41.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b41.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b42.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b42.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b43.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b43.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b44.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b44.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b45.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b45.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b46.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b46.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b47.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b47.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b48.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b48.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b49.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b49.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b5.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b5.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b50.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b50.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b51.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b51.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b52.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b52.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b53.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b53.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b54.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b54.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b55.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b55.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b56.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b56.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b57.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b57.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b58.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b58.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b59.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b59.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b6.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b6.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b60.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b60.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b61.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b61.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b62.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b62.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b63.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b63.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b64.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b64.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b65.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b65.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b66.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b66.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b67.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b67.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b68.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b68.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b69.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b69.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b7.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b7.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b70.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b70.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b71.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b71.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b72.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b72.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b73.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b73.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b74.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b74.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b75.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b75.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b76.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b76.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b77.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b77.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b78.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b78.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b79.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b79.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b8.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b8.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b80.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b80.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b81.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b81.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b82.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b82.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\b9.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\b9.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\hyrzzone.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\hyrzzone.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\Zone\\hzwzone.png",
+      "PackagePath": "staticwebassets\\Img\\Zone\\hzwzone.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\adminfileIcon.png",
+      "PackagePath": "staticwebassets\\Img\\adminfileIcon.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\arw_l.gif",
+      "PackagePath": "staticwebassets\\Img\\arw_l.gif"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\arw_r.gif",
+      "PackagePath": "staticwebassets\\Img\\arw_r.gif"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\backtopIcon.png",
+      "PackagePath": "staticwebassets\\Img\\backtopIcon.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\bg1.png",
+      "PackagePath": "staticwebassets\\Img\\bg1.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\bg2.png",
+      "PackagePath": "staticwebassets\\Img\\bg2.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\come_2_left.jpg",
+      "PackagePath": "staticwebassets\\Img\\come_2_left.jpg"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\come_2_right.jpg",
+      "PackagePath": "staticwebassets\\Img\\come_2_right.jpg"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\commentIcon.png",
+      "PackagePath": "staticwebassets\\Img\\commentIcon.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\cusfileIcon.png",
+      "PackagePath": "staticwebassets\\Img\\cusfileIcon.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\game1.jpg",
+      "PackagePath": "staticwebassets\\Img\\game1.jpg"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\home1.png",
+      "PackagePath": "staticwebassets\\Img\\home1.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\home2.png",
+      "PackagePath": "staticwebassets\\Img\\home2.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\home3.png",
+      "PackagePath": "staticwebassets\\Img\\home3.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\home4.png",
+      "PackagePath": "staticwebassets\\Img\\home4.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\home5.png",
+      "PackagePath": "staticwebassets\\Img\\home5.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\home6.png",
+      "PackagePath": "staticwebassets\\Img\\home6.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\home7.png",
+      "PackagePath": "staticwebassets\\Img\\home7.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\homeicon.png",
+      "PackagePath": "staticwebassets\\Img\\homeicon.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\mm1.jpg",
+      "PackagePath": "staticwebassets\\Img\\mm1.jpg"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\mm2.png",
+      "PackagePath": "staticwebassets\\Img\\mm2.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\mm3.jpg",
+      "PackagePath": "staticwebassets\\Img\\mm3.jpg"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\pictureIcon.png",
+      "PackagePath": "staticwebassets\\Img\\pictureIcon.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\recommend1.png",
+      "PackagePath": "staticwebassets\\Img\\recommend1.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\recommend2.png",
+      "PackagePath": "staticwebassets\\Img\\recommend2.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\recommend3.png",
+      "PackagePath": "staticwebassets\\Img\\recommend3.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\recommend4.png",
+      "PackagePath": "staticwebassets\\Img\\recommend4.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\recommend5.png",
+      "PackagePath": "staticwebassets\\Img\\recommend5.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\recommend6.png",
+      "PackagePath": "staticwebassets\\Img\\recommend6.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\searchIcon.png",
+      "PackagePath": "staticwebassets\\Img\\searchIcon.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\table.gif",
+      "PackagePath": "staticwebassets\\Img\\table.gif"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\title1.png",
+      "PackagePath": "staticwebassets\\Img\\title1.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\title10.png",
+      "PackagePath": "staticwebassets\\Img\\title10.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\title11.png",
+      "PackagePath": "staticwebassets\\Img\\title11.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\title12.png",
+      "PackagePath": "staticwebassets\\Img\\title12.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\title13.png",
+      "PackagePath": "staticwebassets\\Img\\title13.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\title14.png",
+      "PackagePath": "staticwebassets\\Img\\title14.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\title15.png",
+      "PackagePath": "staticwebassets\\Img\\title15.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\title2.png",
+      "PackagePath": "staticwebassets\\Img\\title2.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\title3.png",
+      "PackagePath": "staticwebassets\\Img\\title3.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\title4.png",
+      "PackagePath": "staticwebassets\\Img\\title4.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\title5.png",
+      "PackagePath": "staticwebassets\\Img\\title5.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\title6.png",
+      "PackagePath": "staticwebassets\\Img\\title6.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\title7.png",
+      "PackagePath": "staticwebassets\\Img\\title7.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\title8.png",
+      "PackagePath": "staticwebassets\\Img\\title8.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\title9.png",
+      "PackagePath": "staticwebassets\\Img\\title9.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\viewIcon.png",
+      "PackagePath": "staticwebassets\\Img\\viewIcon.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\warning\\warning.png",
+      "PackagePath": "staticwebassets\\Img\\warning\\warning.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\Img\\wrapperUserPage.png",
+      "PackagePath": "staticwebassets\\Img\\wrapperUserPage.png"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\css\\Content\\ContentPageStyle.css",
+      "PackagePath": "staticwebassets\\css\\Content\\ContentPageStyle.css"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\css\\Home\\Common_ProblemsStyle.css",
+      "PackagePath": "staticwebassets\\css\\Home\\Common_ProblemsStyle.css"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\css\\Home\\Customer_ServicesStyle.css",
+      "PackagePath": "staticwebassets\\css\\Home\\Customer_ServicesStyle.css"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\css\\Home\\Daily_SignInStyle.css",
+      "PackagePath": "staticwebassets\\css\\Home\\Daily_SignInStyle.css"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\css\\Home\\HomeStyle.css",
+      "PackagePath": "staticwebassets\\css\\Home\\HomeStyle.css"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\css\\Home\\RulesStyle.css",
+      "PackagePath": "staticwebassets\\css\\Home\\RulesStyle.css"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\css\\Login\\ForgetPasswordStyle.css",
+      "PackagePath": "staticwebassets\\css\\Login\\ForgetPasswordStyle.css"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\css\\Login\\LoginStyle.css",
+      "PackagePath": "staticwebassets\\css\\Login\\LoginStyle.css"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\css\\Login\\RegisterStyle.css",
+      "PackagePath": "staticwebassets\\css\\Login\\RegisterStyle.css"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\css\\OtherProfile\\Friend.css",
+      "PackagePath": "staticwebassets\\css\\OtherProfile\\Friend.css"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\css\\OtherProfile\\Index.css",
+      "PackagePath": "staticwebassets\\css\\OtherProfile\\Index.css"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\css\\OtherProfile\\Post.css",
+      "PackagePath": "staticwebassets\\css\\OtherProfile\\Post.css"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\css\\PostContent\\NormalStyle.css",
+      "PackagePath": "staticwebassets\\css\\PostContent\\NormalStyle.css"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\css\\Search\\SearchStyle.css",
+      "PackagePath": "staticwebassets\\css\\Search\\SearchStyle.css"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\css\\User\\BestFriendStyle.css",
+      "PackagePath": "staticwebassets\\css\\User\\BestFriendStyle.css"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\css\\User\\SayHelloStyle.css",
+      "PackagePath": "staticwebassets\\css\\User\\SayHelloStyle.css"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\css\\User\\UserPostStyle.css",
+      "PackagePath": "staticwebassets\\css\\User\\UserPostStyle.css"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\css\\User\\UserStyle.css",
+      "PackagePath": "staticwebassets\\css\\User\\UserStyle.css"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\css\\ZonePage\\One_PieceStyle.css",
+      "PackagePath": "staticwebassets\\css\\ZonePage\\One_PieceStyle.css"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\favicon1.ico",
+      "PackagePath": "staticwebassets\\favicon1.ico"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\js\\Content\\ContentPageJs.js",
+      "PackagePath": "staticwebassets\\js\\Content\\ContentPageJs.js"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\js\\Home\\DailyJs.js",
+      "PackagePath": "staticwebassets\\js\\Home\\DailyJs.js"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\js\\Home\\HomeJs.js",
+      "PackagePath": "staticwebassets\\js\\Home\\HomeJs.js"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\js\\Login\\RegisterJs.js",
+      "PackagePath": "staticwebassets\\js\\Login\\RegisterJs.js"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\js\\Other\\Friends.js",
+      "PackagePath": "staticwebassets\\js\\Other\\Friends.js"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\js\\Other\\Post.js",
+      "PackagePath": "staticwebassets\\js\\Other\\Post.js"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\js\\PostContent\\NormalJs.js",
+      "PackagePath": "staticwebassets\\js\\PostContent\\NormalJs.js"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\js\\Public\\Size.js",
+      "PackagePath": "staticwebassets\\js\\Public\\Size.js"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\js\\Search\\SearchJs.js",
+      "PackagePath": "staticwebassets\\js\\Search\\SearchJs.js"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\js\\User\\Friends.js",
+      "PackagePath": "staticwebassets\\js\\User\\Friends.js"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\js\\User\\Post.js",
+      "PackagePath": "staticwebassets\\js\\User\\Post.js"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\js\\User\\SayHello.js",
+      "PackagePath": "staticwebassets\\js\\User\\SayHello.js"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\js\\User\\index.js",
+      "PackagePath": "staticwebassets\\js\\User\\index.js"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\js\\ZonePage\\ZoneJs.js",
+      "PackagePath": "staticwebassets\\js\\ZonePage\\ZoneJs.js"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\桌面\\Platform\\Platform\\Platform\\Platform\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.Platform.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.build.Platform.props",
+      "PackagePath": "build\\Platform.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Platform.props",
+      "PackagePath": "buildMultiTargeting\\Platform.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildTransitive.Platform.props",
+      "PackagePath": "buildTransitive\\Platform.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
